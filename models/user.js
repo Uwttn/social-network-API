@@ -20,6 +20,10 @@ const userSchema = new Schema(
       max_length: 50,
     },
     reactions: [reactionSchema],
+    friends: [{
+      type: Schema.Types.ObjectId,
+      ref: "User"
+    }]
   },
   {
     toJSON: {
