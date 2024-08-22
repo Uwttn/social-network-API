@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const reactionSchema = require('./reaction');
+const reactionSchema = require('./Reaction');
 
 // Schema to create User model
 const userSchema = new Schema(
@@ -22,7 +22,8 @@ const userSchema = new Schema(
     reactions: [reactionSchema],
     friends: [{
       type: Schema.Types.ObjectId,
-      ref: "User"
+      ref: "User",
+      name: "first"
     }]
   },
   {
