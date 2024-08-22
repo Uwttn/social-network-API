@@ -23,10 +23,10 @@ connection.once('open', async () => {
 
 
   // Loop 20 times -- add users to the users array
-  for (let i = 0; i < 20; i++) {
+  for (let i = 0; i < 10; i++) {
     // Get some random reaction objects using a helper function that we imported from ./data
-    const reactions = getRandomReactions(20);
-    const thoughts = getRandomThoughts(20);
+    const reactions = getRandomReactions(1);
+    const thoughts = getRandomThoughts(1);
     const fullName = getRandomName();
     const first = fullName.split(' ')[0];
     const last = fullName.split(' ')[1];
