@@ -89,6 +89,28 @@ const names = [
     '“The stars are my guide.”',
     '“The winds whisper justice.”',
   ];
+
+  const appReactions = [
+    '“Victory.”',
+    '“Strength.”',
+    '“Courage.”',
+    '“Unity.”',
+    '“Power.”',
+    '“Justice.”',
+    '“Hope.”',
+    '“Honor.”',
+    '“Fury.”',
+    '“Glory.”',
+    '“Resolve.”',
+    '“Valor.”',
+    '“Faith.”',
+    '“Light.”',
+    '“Focus.”',
+    '“Wisdom.”',
+    '“Bravery.”',
+    '“Truth.”',
+  ];
+
   
   // Get a random item given an array
 const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
@@ -102,7 +124,18 @@ const getRandomReactions = (int) => {
   const results = [];
   for (let i = 0; i < int; i++) {
     results.push({
-      reactionName: getRandomArrItem(appThoughts),
+      reactionName: getRandomArrItem(appReactions),
+      score: Math.floor(Math.random() * (99 - 70 + 1) + 70),
+    });
+  }
+  return results;
+};
+
+const getRandomThoughts = (int) => {
+  const results = [];
+  for (let i = 0; i < int; i++) {
+    results.push({
+      thoughtName: getRandomArrItem(appThoughts),
       score: Math.floor(Math.random() * (99 - 70 + 1) + 70),
     });
   }
@@ -110,4 +143,4 @@ const getRandomReactions = (int) => {
 };
 
 // Export the functions for use in seed.js
-module.exports = { getRandomName, getRandomReactions };
+module.exports = { getRandomName, getRandomReactions, getRandomThoughts };
