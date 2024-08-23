@@ -45,12 +45,10 @@
 
 1. [Clone the project repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-2. [Install Inquirer](https://www.npmjs.com/package/inquirer/v/8.2.4)
-
 ## To use the application:
 1. Open a terminal window.
-2. Navigate to the directory where the application is located (index.js).
-3. Run the application using its command (node <filepath>)
+2. Navigate to the directory where the application is located (server.js).
+3. Run the application using its command ```npm i```, so that it can install all of its dependancies
 
 # Languages
 HTML, CSS, JavaScript
