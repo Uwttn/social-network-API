@@ -44,8 +44,7 @@ connection.once('open', async () => {
 
   // Add thoughts to the collection and await the results
   await Thought.create({
-    thoughtName: 'UCLA',
-    inPerson: false,
+    thoughtName: 'Where there is hope, there is a way.',
     users: [...userData.map(({_id}) => _id)],
   });
 

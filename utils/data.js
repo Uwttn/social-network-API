@@ -70,24 +70,25 @@ const names = [
 ];
 
 const appReactions = [
-  '“Victory.”',
-  '“Strength.”',
-  '“Courage.”',
-  '“Unity.”',
-  '“Power.”',
-  '“Justice.”',
-  '“Hope.”',
-  '“Honor.”',
-  '“Fury.”',
-  '“Glory.”',
-  '“Resolve.”',
-  '“Valor.”',
-  '“Faith.”',
-  '“Light.”',
-  '“Focus.”',
-  '“Wisdom.”',
-  '“Bravery.”',
-  '“Truth.”',
+  '🏆',
+  '💪',
+  '🦁',
+  '🤝',
+  '⚡️',
+  '⚖️',
+  '🌟',
+  '🏅',
+  '😡',
+  '🌟',
+  '✊',
+  '🛡️',
+  '🙏',
+  '💡',
+  '🎯',
+  '🦉',
+  '🦸',
+  '🔍',
+  '😊'
 ];
 
 // Get a random item given an array
@@ -95,18 +96,18 @@ const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 
 // Gets a random full name
 const getRandomName = () =>
-`${getRandomArrItem(names)} ${getRandomArrItem(names)}`;
+  `${getRandomArrItem(names)} ${getRandomArrItem(names)}`;
 
 // Function to generate random reactions that we can add to user object.
 const getRandomReactions = (int) => {
-const results = [];
-for (let i = 0; i < int; i++) {
-  results.push({
-    reactionName: getRandomArrItem(appReactions),
-    score: Math.floor(Math.random() * (99 - 70 + 1) + 70),
-  });
-}
-return results;
+  const results = [];
+  for (let i = 0; i < int; i++) {
+    results.push({
+      reactionName: getRandomArrItem(appReactions),
+      score: Math.floor(Math.random() * (99 - 70 + 1) + 70),
+    });
+  }
+  return results;
 };
 
 // Export the functions for use in seed.js

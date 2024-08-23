@@ -8,11 +8,6 @@ const reactionSchema = new Schema(
     },
     reactionName: {
       type: String,
-      default: 'Happy reaction',
-    },
-    createdAt: {
-      type: Date,
-      default: Date.now,
     },
   },
   {
