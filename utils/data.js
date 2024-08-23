@@ -69,7 +69,7 @@ const names = [
   'Nova',
 ];
 
-const appThoughts = [
+const appReactions = [
   '“Victory.”',
   '“Strength.”',
   '“Courage.”',
@@ -102,7 +102,7 @@ const getRandomReactions = (int) => {
 const results = [];
 for (let i = 0; i < int; i++) {
   results.push({
-    reactionName: getRandomArrItem(appThoughts),
+    reactionName: getRandomArrItem(appReactions),
     score: Math.floor(Math.random() * (99 - 70 + 1) + 70),
   });
 }
