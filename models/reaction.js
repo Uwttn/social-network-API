@@ -8,9 +8,6 @@ const reactionSchema = new Schema(
     },
     reactionName: {
       type: String,
-      required: true,
-      maxlength: 50,
-      minlength: 4,
       default: 'Happy reaction',
     },
     createdAt: {
