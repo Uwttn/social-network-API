@@ -1,3 +1,7 @@
+<div align="Center">
+    <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></a>
+</div>
+
 # social-network-API
 
 <details>
@@ -6,13 +10,9 @@
 * [Initial Setup](#initial-setup)
 * [Project Setup](#project-setup)
 * [Languages](#languages)
-* [Usage](#usage)
 * [Contribution](#contribution)
-* [Questions](#questions)
 
 </details>
-
-  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
    ## Description
   A social networking site to post thoughts, add reactions, and create your username
@@ -62,8 +62,6 @@ Want to improve this project? Great! We encourage contribution to make this proj
 
 Link to [YouTube](https://www.youtube.com/watch?v=j8khovpKqyU) video
 
-
-# Questions
 ## Contact Me
 
 - Jose's [Portfolio](https://uwttn.github.io/portfolio/)
