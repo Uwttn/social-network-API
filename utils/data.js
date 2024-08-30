@@ -91,6 +91,27 @@ const appReactions = [
   '😊'
 ];
 
+const appThoughts = [
+  '“Justice always finds a way.”',
+  '“In the shadows, I find my strength.”',
+  '“Feel the heat of justice.”',
+  '“Iron will, unbreakable spirit.”',
+  '“The night is darkest before the dawn.”',
+  '“Victory through unity.”',
+  '“The universe is my battlefield.”',
+  '“Light up the darkness.”',
+  '“No villain can escape the storm.”',
+  '“Defend the weak, uphold the strong.”',
+  '“For truth, for honor, for all.”',
+  '“Where there is hope, there is a way.”',
+  '“The cosmos bends to my will.”',
+  '“I am the shield, I am the sword.”',
+  '“Evil never sleeps, and neither do I.”',
+  '“Fire and fury, I bring the fight.”',
+  '“The stars are my guide.”',
+  '“The winds whisper justice.”',
+];
+
 // Get a random item given an array
 const getRandomArrItem = (arr) => arr[Math.floor(Math.random() * arr.length)];
 

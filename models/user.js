@@ -19,10 +19,13 @@ const userSchema = new Schema(
       required: true,
       max_length: 50,
     },
-    reactions: [reactionSchema],
     friends: [{
       type: Schema.Types.ObjectId,
       ref: "User"
+    }],
+    thoughts: [{
+      type: Schema.Types.ObjectId,
+      ref: "Thought"
     }]
   },
   {
